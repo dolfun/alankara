@@ -1,11 +1,11 @@
-import type { Alankara, Action } from "@/types.ts";
+import type { Alankara, Action } from "@/types";
 import type { ActionDispatch } from "react";
 
 import { Box, Paper } from "@mui/material";
-import { notations, raags } from "@/data.ts";
-import { SelectFromData } from "@/components/SelectFromData.tsx";
-import { SelectNote } from "@/components/SelectNote.tsx";
-import { PatternInput } from "@/components/PatternInput.tsx";
+import { notations, raags } from "@/data";
+import { SelectFromData } from "@/components/SelectFromData";
+import { SelectNote } from "@/components/SelectNote";
+import { PatternInput } from "@/components/PatternInput";
 
 type Props = {
   alankara: Alankara;

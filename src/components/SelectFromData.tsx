@@ -1,4 +1,4 @@
-import type { Alankara, Action, Notation, Raag } from "@/types.ts";
+import type { Alankara, Action, Notation, Raag } from "@/types";
 import type { Dispatch } from "react";
 
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";

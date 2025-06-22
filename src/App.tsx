@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
-import { ThemeProvider } from "@/components/Theme.tsx";
-import { AlankaraInput } from "@/components/AlankaraInput.tsx";
+import { ThemeProvider } from "@/components/Theme";
+import { AlankaraInput } from "@/components/AlankaraInput";
 
-import { useAlankara } from "@/useAlankara.ts";
+import { useAlankara } from "@/useAlankara";
 
 function App() {
   const [alankara, dispatchAlankar] = useAlankara();

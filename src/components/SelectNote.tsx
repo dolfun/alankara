@@ -1,8 +1,8 @@
-import type { Alankara, Action, Note } from "@/types.ts";
+import type { Alankara, Action, Note } from "@/types";
 import type { Dispatch } from "react";
 
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
-import { orderedNotes } from "@/data.ts";
+import { orderedNotes } from "@/data";
 
 type Props = {
   label: string;
