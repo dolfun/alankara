@@ -30,4 +30,5 @@ export const defaultAlankar: Alankara = {
   raag: raags.find(({ name }) => name === defaultRaag)!,
   startingNote: "p0",
   endingNote: "p2",
+  pattern: "1 2 3",
 };

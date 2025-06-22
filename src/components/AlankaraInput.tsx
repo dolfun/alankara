@@ -5,6 +5,7 @@ import { Box, Paper } from "@mui/material";
 import { notations, raags } from "@/data.ts";
 import { SelectFromData } from "@/components/SelectFromData.tsx";
 import { SelectNote } from "@/components/SelectNote.tsx";
+import { PatternInput } from "@/components/PatternInput.tsx";
 
 type Props = {
   alankara: Alankara;
@@ -57,6 +58,8 @@ export function AlankaraInput({ alankara, dispatchAlankar }: Props) {
           data={alankara.raag.notes}
         />
       </Box>
+
+      <PatternInput alankara={alankara} dispatchAlankar={dispatchAlankar} />
     </Paper>
   );
 }

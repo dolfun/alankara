@@ -30,6 +30,7 @@ export type Alankara = {
   raag: Raag;
   startingNote: Note;
   endingNote: Note;
+  pattern: string;
 };
 
 export type Action<K extends keyof Alankara = keyof Alankara> = {
