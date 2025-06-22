@@ -1,0 +1,13 @@
+{
+  "default": "SaRaGaMa",
+  "notations": [
+    {
+      "name": "SaRaGaMa",
+      "symbols": ["pa", "dha", "ni", "Sa", "Re", "Ga", "Ma", "Pa", "Dha", "Ni", "Sa'", "Re'", "Ga'", "Ma'", "Pa'"]
+    },
+    {
+      "name": "SRGM",
+      "symbols": ["P̣", "Ḍ", "Ṇ", "S", "R", "G", "M", "P", "D", "N", "Ṡ", "Ṙ", "Ġ", "Ṁ", "Ṗ"]
+    }
+  ]
+}

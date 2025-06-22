@@ -1,14 +1,23 @@
+import { Box, Typography } from "@mui/material";
 import { ThemeProvider } from "@/components/Theme.tsx";
-import { Container, Typography } from "@mui/material";
+import { AlankaraInput } from "@/components/AlankaraInput.tsx";
+
+import { useAlankara } from "@/useAlankara.ts";
 
 function App() {
+  const [alankara, dispatchAlankar] = useAlankara();
+
   return (
     <ThemeProvider>
-      <Container>
+      <Box
+        sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
         <Typography variant="h1" sx={{ textAlign: "center" }}>
           Alankara
         </Typography>
-      </Container>
+
+        <AlankaraInput alankara={alankara} dispatchAlankar={dispatchAlankar} />
+      </Box>
     </ThemeProvider>
   );
 }

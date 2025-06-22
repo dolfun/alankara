@@ -1,0 +1,9 @@
+{
+  "default": "Bilaval",
+  "raags": [
+    {
+      "name": "Bilaval",
+      "notes": ["p0", "d0", "n0", "s1", "r1", "g1", "m1", "p1", "d1", "n1", "s2", "r2", "g2", "m2", "p2"]
+    }
+  ]
+}
