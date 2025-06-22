@@ -28,6 +28,8 @@ export type Raag = {
 export type Alankara = {
   notation: Notation;
   raag: Raag;
+  startingNote: Note;
+  endingNote: Note;
 };
 
 export type Action<K extends keyof Alankara = keyof Alankara> = {

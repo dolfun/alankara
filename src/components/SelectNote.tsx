@@ -1,18 +1,18 @@
-import type { Alankara, Action, Notation, Raag } from "@/types.ts";
+import type { Alankara, Action, Note } from "@/types.ts";
 import type { Dispatch } from "react";
 
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import { orderedNotes } from "@/data.ts";
 
 type Props = {
   label: string;
   alankara: Alankara;
   dispatchAlankar: Dispatch<Action>;
-} & (
-  | { keyName: "notation"; data: Notation[] }
-  | { keyName: "raag"; data: Raag[] }
-);
+  keyName: "startingNote" | "endingNote";
+  data: Note[];
+};
 
-export function SelectFromData({
+export function SelectNote({
   label,
   alankara,
   dispatchAlankar,
@@ -26,16 +26,18 @@ export function SelectFromData({
       <Select
         labelId={labelId}
         label={label}
-        value={alankara[keyName].name}
+        value={alankara[keyName]}
         onChange={(e) =>
           dispatchAlankar({
             type: keyName,
-            payload: data.find(({ name }) => name === e.target.value)!,
+            payload: data.find((note) => note === e.target.value)!,
           })
         }
       >
-        {data.map(({ name }) => (
-          <MenuItem value={name}>{name}</MenuItem>
+        {data.map((note) => (
+          <MenuItem value={note}>
+            {alankara.notation.symbols[orderedNotes.indexOf(note)]}
+          </MenuItem>
         ))}
       </Select>
     </FormControl>
