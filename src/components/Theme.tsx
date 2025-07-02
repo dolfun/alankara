@@ -9,7 +9,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import type { ReactNode } from "react";
 
-function ThemeToggler() {
+const ThemeToggler = () => {
   const { mode, systemMode, setMode } = useColorScheme();
   if (!mode) {
     return null;
@@ -39,7 +39,7 @@ function ThemeToggler() {
       </IconButton>
     </Paper>
   );
-}
+};
 
 const darkTheme = createTheme({
   colorSchemes: {
@@ -51,7 +51,7 @@ type Props = {
   children: ReactNode;
 };
 
-export function ThemeProvider({ children }: Props) {
+export const ThemeProvider = ({ children }: Props) => {
   return (
     <MuiThemeProvider theme={darkTheme}>
       <CssBaseline />
@@ -59,4 +59,4 @@ export function ThemeProvider({ children }: Props) {
       {children}
     </MuiThemeProvider>
   );
-}
+};

@@ -3,7 +3,7 @@ import { ThemeProvider, AlankaraInput, TableInput } from "@/components";
 
 import { useAlankara } from "@/useAlankara";
 
-function App() {
+const App = () => {
   const [alankara, dispatchAlankar] = useAlankara();
 
   return (
@@ -23,6 +23,6 @@ function App() {
       </Box>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

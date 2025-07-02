@@ -10,7 +10,7 @@ type Props = {
   dispatchAlankar: Dispatch<Action>;
 };
 
-export function PatternInput({ alankara, dispatchAlankar }: Props) {
+export const PatternInput = ({ alankara, dispatchAlankar }: Props) => {
   return (
     <TextField
       label="Pattern"
@@ -31,4 +31,4 @@ export function PatternInput({ alankara, dispatchAlankar }: Props) {
       }
     />
   );
-}
+};

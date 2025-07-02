@@ -12,13 +12,13 @@ type Props = {
   data: Note[];
 };
 
-export function SelectNote({
+export const SelectNote = ({
   label,
   alankara,
   dispatchAlankar,
   data,
   keyName,
-}: Props) {
+}: Props) => {
   const labelId = `${keyName}-label`;
   return (
     <FormControl fullWidth>
@@ -42,4 +42,4 @@ export function SelectNote({
       </Select>
     </FormControl>
   );
-}
+};

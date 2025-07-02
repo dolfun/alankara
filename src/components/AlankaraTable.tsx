@@ -16,7 +16,7 @@ type Props = {
   isAaroh: boolean;
 };
 
-export function AlankaraTable({ alankara, isAaroh }: Props) {
+export const AlankaraTable = ({ alankara, isAaroh }: Props) => {
   const pattern = parsePattern(alankara.pattern).map(Number);
   const patterns = createPatterns(
     isAaroh ? pattern : pattern.reverse(),
@@ -49,4 +49,4 @@ export function AlankaraTable({ alankara, isAaroh }: Props) {
       </Table>
     </TableContainer>
   );
-}
+};

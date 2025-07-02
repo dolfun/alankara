@@ -12,7 +12,7 @@ type Props = {
   dispatchAlankar: ActionDispatch<[Action]>;
 };
 
-export function AlankaraInput({ alankara, dispatchAlankar }: Props) {
+export const AlankaraInput = ({ alankara, dispatchAlankar }: Props) => {
   return (
     <Paper
       sx={{
@@ -62,4 +62,4 @@ export function AlankaraInput({ alankara, dispatchAlankar }: Props) {
       <PatternInput alankara={alankara} dispatchAlankar={dispatchAlankar} />
     </Paper>
   );
-}
+};

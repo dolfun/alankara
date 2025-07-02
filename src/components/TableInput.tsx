@@ -19,7 +19,7 @@ type Props = {
   alankara: Alankara;
 };
 
-export function TableInput({ alankara }: Props) {
+export const TableInput = ({ alankara }: Props) => {
   const [isAaroh, setIsAaroh] = useState(true);
 
   if (
@@ -78,4 +78,4 @@ export function TableInput({ alankara }: Props) {
       </Box>
     </Paper>
   );
-}
+};
