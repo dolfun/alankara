@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import { ThemeProvider } from "@/components/Theme";
-import { AlankaraInput } from "@/components/AlankaraInput";
+import { ThemeProvider, AlankaraInput } from "@/components";
 
 import { useAlankara } from "@/useAlankara";
 
