@@ -1,5 +1,5 @@
-import { Box, Typography } from "@mui/material";
-import { ThemeProvider, AlankaraInput } from "@/components";
+import { Box } from "@mui/material";
+import { ThemeProvider, AlankaraInput, TableInput } from "@/components";
 
 import { useAlankara } from "@/useAlankara";
 
@@ -9,13 +9,17 @@ function App() {
   return (
     <ThemeProvider>
       <Box
-        sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 2,
+          margin: 1,
+        }}
       >
-        <Typography variant="h1" sx={{ textAlign: "center" }}>
-          Alankara
-        </Typography>
-
         <AlankaraInput alankara={alankara} dispatchAlankar={dispatchAlankar} />
+
+        <TableInput alankara={alankara} />
       </Box>
     </ThemeProvider>
   );
